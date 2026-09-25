@@ -10,6 +10,11 @@ public class CombineresultOftwo {
 	CompletableFuture<Integer> finalfuture = future1.thenCombine(future2 ,(n1, n2) -> n1+n2 );
 	
 	System.out.println(finalfuture.join());
+	
+	CompletableFuture.allOf(future1 , future2); //both will be executed
+	CompletableFuture.anyOf(future1 , future2); //one of them get executed
+	
+	System.out.println("task has been done.....");
 	}
 
 }
