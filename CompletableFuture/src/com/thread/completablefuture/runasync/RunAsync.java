@@ -12,7 +12,9 @@ class RunAsync {
 			System.out.println("I am run async");
 		});
 		//when you dont want anything in return then use runAsync
-		System.out.println(completableFuture.join());
+		     //completableFuture.get()
+		System.out.println(completableFuture.join()); // this is null because it is not return anything
+		//join() is equal to get() but it throws checked exception
 		System.out.println("RunAsync.main() END");    
 	}
 

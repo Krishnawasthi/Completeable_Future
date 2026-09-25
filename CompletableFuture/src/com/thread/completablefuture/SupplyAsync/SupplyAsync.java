@@ -1,4 +1,4 @@
-package com.thread.completablefuture.runasync;
+package com.thread.completablefuture.SupplyAsync;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
@@ -14,7 +14,7 @@ public class SupplyAsync {
 				return "SUCCESS";
 			});
 			//when you want anything in return then use SupplyAsync
-			System.out.println("SupplyAsync return something: "+completableFuture.join());
+			System.out.println("SupplyAsync return something: "+ completableFuture.join());
 			System.out.println("SupplyAsync.main() END");    
 		}
 }
